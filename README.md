@@ -23,4 +23,6 @@ npm install -g json-server
 json-server --watch --host 192.168.XXX.XXY db.json
 ```
 
+4. Edit `BASE_URL` in 'RetrofitClientInstance'
+
 Check in [json-server](https://github.com/typicode/json-server)

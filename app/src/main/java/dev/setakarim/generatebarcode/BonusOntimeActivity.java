@@ -2,9 +2,8 @@ package dev.setakarim.generatebarcode;
 
 import android.graphics.Bitmap;
 import android.graphics.Color;
-import android.support.v4.content.ContextCompat;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -33,7 +32,7 @@ public class BonusOntimeActivity extends AppCompatActivity {
 
     private int height = 100, width = 300;
 
-    List<BonusOntimeModel> mItems = new ArrayList<>();
+    List<BonusOntimeModel> dataList = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,13 +59,13 @@ public class BonusOntimeActivity extends AppCompatActivity {
 
     }
 
-    private void generateData(List<BonusOntimeModel> bonusOntimeModels) {
-        mItems.clear();
-        mItems.addAll(bonusOntimeModels);
+    private void generateData(List<BonusOntimeModel> data) {
+        dataList.clear();
+        dataList.addAll(data);
     }
 
     private void display(){
-        String value = mItems.get(0).getVoucherOnt();
+        String value = dataList.get(0).getVoucherOnt();
 
         txtValue.setText(value);
 
