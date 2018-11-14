@@ -3,7 +3,9 @@ package dev.setakarim.generatebarcode;
 import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.support.constraint.Group;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -27,8 +29,9 @@ import retrofit2.Response;
 public class BonusOntimeActivity extends AppCompatActivity {
 
     private ImageView imgBarcode;
-    private TextView txtValue;
+    private TextView txtValue, txtDescOntime;
     private Bitmap result;
+    private Group group;
 
     private int height = 100, width = 300;
 
@@ -41,14 +44,25 @@ public class BonusOntimeActivity extends AppCompatActivity {
 
         imgBarcode = findViewById(R.id.img_barcode);
         txtValue = findViewById(R.id.txt_hasil);
+        txtDescOntime = findViewById(R.id.txt_desc_onetime);
+        group = findViewById(R.id.group);
 
         RouteServices service = RetrofitClientInstance.getRetrofitInstance().create(RouteServices.class);
+
         Call<List<BonusOntimeModel>> call = service.getBonusOntime();
+//        Call<List<BonusOntimeModel>> call = service.getBonusOntimeEmpty();
+
         call.enqueue(new Callback<List<BonusOntimeModel>>() {
             @Override
             public void onResponse(Call<List<BonusOntimeModel>> call, Response<List<BonusOntimeModel>> response) {
                 generateData(response.body());
-                display();
+
+                if (response.body().isEmpty()) {
+                    txtDescOntime.setText(R.string.desc_ontime_empty);
+                } else {
+                    txtDescOntime.setText(R.string.desc_ontime);
+                    display();
+                }
             }
 
             @Override
@@ -65,9 +79,11 @@ public class BonusOntimeActivity extends AppCompatActivity {
     }
 
     private void display(){
+
         String value = dataList.get(0).getVoucherOnt();
 
         txtValue.setText(value);
+        group.setVisibility(View.VISIBLE);
 
         try {
             result = generate(value);

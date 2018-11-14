@@ -47,9 +47,12 @@ public class BonusViralAdapter extends RecyclerView.Adapter<BonusViralAdapter.Bo
 
     @Override
     public void onBindViewHolder(@NonNull BonusViralViewHolder bonusViralViewHolder, int i) {
+        String date = dataList.get(i).getDatec();
+        String phone = dataList.get(i).getPhoneAfi();
         String value = dataList.get(i).getVoucherRef();
 
-        bonusViralViewHolder.txtValue.setText(value);
+        bonusViralViewHolder.txtDate.setText(date);
+        bonusViralViewHolder.txtPhone.setText(phone);
 
         try {
             result = generate(value);
@@ -70,7 +73,7 @@ public class BonusViralAdapter extends RecyclerView.Adapter<BonusViralAdapter.Bo
 
         public final View mView;
 
-        TextView txtValue;
+        TextView txtDate, txtPhone;
         private ImageView imgBarcode;
 
         public BonusViralViewHolder(@NonNull View itemView) {
@@ -78,7 +81,8 @@ public class BonusViralAdapter extends RecyclerView.Adapter<BonusViralAdapter.Bo
 
             mView = itemView;
 
-            txtValue = mView.findViewById(R.id.txt_hasil);
+            txtDate = mView.findViewById(R.id.txt_date);
+            txtPhone = mView.findViewById(R.id.txt_phone);
             imgBarcode = mView.findViewById(R.id.img_barcode);
         }
     }

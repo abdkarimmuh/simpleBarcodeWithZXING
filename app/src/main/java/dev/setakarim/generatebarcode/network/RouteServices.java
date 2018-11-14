@@ -14,4 +14,10 @@ public interface RouteServices {
 
     @GET("/llx_afiliasi")
     Call<List<BonusViralModel>> getBonusViral();
+
+    @GET("/llx_societe_empty")
+    Call<List<BonusOntimeModel>> getBonusOntimeEmpty();
+
+    @GET("/llx_afiliasi_empty")
+    Call<List<BonusViralModel>> getBonusViralEmpty();
 }

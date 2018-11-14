@@ -3,79 +3,96 @@
         {
             "rowid": 1,
             "fk_user": 1,
-            "voucher_ref": "b9e16b46-0867-48d3-8c16-a53fc75ae5f3",
-            "datec": "2018-11-09T03:10:28.682Z",
-            "tms": "2018-11-09T09:35:49.614Z"
+            "voucher_ref": "7ca6379c-0808-44ab-89be-8a38371a5a19",
+            "phone_afi": "580-775-1820",
+            "datec": "11-10-2018",
+            "tms": "2018-11-12T12:42:49.654Z"
         },
         {
             "rowid": 2,
             "fk_user": 1,
-            "voucher_ref": "b3aa2b87-d291-4ba6-82ab-f489ba2b9241",
-            "datec": "2018-11-08T12:57:02.196Z",
-            "tms": "2018-11-08T15:04:02.858Z"
+            "voucher_ref": "62f90b45-5723-46bf-9be5-647f9cae8e9c",
+            "phone_afi": "486-652-3708",
+            "datec": "11-10-2018",
+            "tms": "2018-11-11T22:13:31.655Z"
         },
         {
             "rowid": 3,
             "fk_user": 1,
-            "voucher_ref": "41b89982-c71f-47b0-9829-f80dd5c4ca5e",
-            "datec": "2018-11-09T09:04:57.188Z",
-            "tms": "2018-11-08T15:54:13.511Z"
+            "voucher_ref": "1ddfb7fa-1db3-4b88-8a2c-1cf8e9e84a56",
+            "phone_afi": "641-071-4762",
+            "datec": "11-10-2018",
+            "tms": "2018-11-12T04:18:40.193Z"
         },
         {
             "rowid": 4,
             "fk_user": 1,
-            "voucher_ref": "7c03f255-38b1-492f-bf66-a93ccac64d08",
-            "datec": "2018-11-09T01:00:55.810Z",
-            "tms": "2018-11-08T14:48:56.444Z"
+            "voucher_ref": "0d76db52-5c97-406a-8fdb-a95bc9f08f5c",
+            "phone_afi": "321-814-8400",
+            "datec": "11-10-2018",
+            "tms": "2018-11-11T17:29:55.615Z"
         },
         {
             "rowid": 5,
             "fk_user": 1,
-            "voucher_ref": "3a2c308a-ff52-4bd0-af06-c23cc15bfc1c",
-            "datec": "2018-11-08T22:39:48.467Z",
-            "tms": "2018-11-08T23:52:26.349Z"
+            "voucher_ref": "438ecaab-3bce-4741-bf50-8f05f8a3dce6",
+            "phone_afi": "306-815-6088",
+            "datec": "11-10-2018",
+            "tms": "2018-11-11T23:59:11.114Z"
         },
         {
             "rowid": 6,
             "fk_user": 1,
-            "voucher_ref": "3675da06-ab92-4430-a52d-ac43e7742aa1",
-            "datec": "2018-11-09T07:05:37.539Z",
-            "tms": "2018-11-08T23:17:30.114Z"
+            "voucher_ref": "f67df3d2-88e5-4adb-be6e-554b7b58bb48",
+            "phone_afi": "769-842-7703",
+            "datec": "11-10-2018",
+            "tms": "2018-11-12T10:32:59.477Z"
         },
         {
             "rowid": 7,
             "fk_user": 1,
-            "voucher_ref": "89a37d21-1db9-47c7-a354-cca35d8f0e35",
-            "datec": "2018-11-08T12:38:38.219Z",
-            "tms": "2018-11-09T00:25:05.177Z"
+            "voucher_ref": "bc9bc837-5fad-42eb-8126-006b9f70c0a5",
+            "phone_afi": "797-142-7248",
+            "datec": "11-10-2018",
+            "tms": "2018-11-11T15:54:50.227Z"
         },
         {
             "rowid": 8,
             "fk_user": 1,
-            "voucher_ref": "b4c2de0f-bbf3-4c6f-84bc-45dc8ed682cf",
-            "datec": "2018-11-08T20:52:08.043Z",
-            "tms": "2018-11-09T07:31:34.981Z"
+            "voucher_ref": "1e246b62-3cdd-4183-b09c-e3a4b88c37c1",
+            "phone_afi": "317-702-6101",
+            "datec": "11-10-2018",
+            "tms": "2018-11-11T18:45:57.422Z"
         },
         {
             "rowid": 9,
             "fk_user": 1,
-            "voucher_ref": "7da16280-d561-4895-b798-822a5312cd8a",
-            "datec": "2018-11-08T17:10:17.353Z",
-            "tms": "2018-11-08T19:59:31.927Z"
+            "voucher_ref": "b207dd8d-ad6f-42ba-84c0-7e33251597af",
+            "phone_afi": "437-259-3047",
+            "datec": "11-10-2018",
+            "tms": "2018-11-11T21:50:49.008Z"
         },
         {
             "rowid": 10,
             "fk_user": 1,
-            "voucher_ref": "75d608f7-610d-4505-a78b-0a413f5b6256",
-            "datec": "2018-11-09T04:51:15.637Z",
-            "tms": "2018-11-09T09:12:45.854Z"
+            "voucher_ref": "74ba9583-0dfa-4d92-a9ed-080b144ef48d",
+            "phone_afi": "597-821-1965",
+            "datec": "11-10-2018",
+            "tms": "2018-11-12T02:58:48.533Z"
         }
     ],
     "llx_societe": [
         {
             "rowid": 1,
             "fk_user": 1,
-            "voucher_ont": "ahjsahduqiasjhdaj"
+            "voucher_ont": "test 123"
         }
+    ],
+    "llx_afiliasi_empty":[
+        
+    ],
+    "llx_societe_empty":[
+        
     ]
+
 }

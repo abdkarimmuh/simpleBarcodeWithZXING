@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">GenerateBarCode</string>
+    <string name="desc_viral">Anda mendapatkan voucher viral berupa voucher alfamart sebesar\nRp 100.000</string>
+    <string name="desc_viral_empty">Anda belum mendapatkan voucher viral</string>
+    <string name="desc_ontime">Anda mendapatkan voucher ontime karena telah melakukan pembayaran angsuran DP tepat waktu</string>
+    <string name="desc_ontime_empty">Anda tidak mendapatkan voucher ontime</string>
 </resources>

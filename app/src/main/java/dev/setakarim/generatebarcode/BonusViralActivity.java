@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.List;
@@ -20,18 +21,30 @@ public class BonusViralActivity extends AppCompatActivity {
 
     private BonusViralAdapter adapter;
     private RecyclerView recyclerView;
+    private TextView txtDescViral;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bonus_viral);
 
+        txtDescViral = findViewById(R.id.txt_desc_viral);
+
         RouteServices service = RetrofitClientInstance.getRetrofitInstance().create(RouteServices.class);
+
         Call<List<BonusViralModel>> call = service.getBonusViral();
+//        Call<List<BonusViralModel>> call = service.getBonusViralEmpty();
+
         call.enqueue(new Callback<List<BonusViralModel>>() {
             @Override
             public void onResponse(Call<List<BonusViralModel>> call, Response<List<BonusViralModel>> response) {
                 generateDataList(response.body());
+
+                if (response.body().isEmpty()) {
+                    txtDescViral.setText(R.string.desc_viral_empty);
+                } else {
+                    txtDescViral.setText(R.string.desc_viral);
+                }
             }
 
             @Override
